@@ -15,10 +15,10 @@ p, li {
   letter-spacing: 1px;
 }
 
-content{
+.content{
   display: block;
-margin: 0 auto;
-touch-action: manipulation;
+  touch-action: manipulation;
+  margin: 0 auto;
 }
 
 .block {

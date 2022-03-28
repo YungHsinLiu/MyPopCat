@@ -15,13 +15,28 @@ p, li {
   letter-spacing: 1px;
 }
 
+content{
+  display: block;
+margin: 0 auto;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 
 html {
   background-color: #00539F;
 }
 
 body {
-  width: 600px;
+  width: 800;
   margin: 0 auto;
   background-color: #FF9500;
   padding: 0 20px 20px 20px;

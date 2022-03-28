@@ -17,13 +17,13 @@ p, li {
 .container {
   position: relative;
   width: 100%;
+  touch-action: manipulation;
   margin: 0 auto;
-  /* touch-action: manipulation; */
-  /* -webkit-user-drag: none;
+  -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; */
+  -ms-user-select: none;
 }
 
 /* Make the image responsive */

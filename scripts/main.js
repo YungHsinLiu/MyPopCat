@@ -3,8 +3,7 @@ var timeoutId;
 var popCount = 0;
 
 var Count = document.querySelector('h1');
-
-
+  
 function changeSrc()
 {
     clearTimeout(timeoutId);

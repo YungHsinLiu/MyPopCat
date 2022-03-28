@@ -14,9 +14,9 @@ p, li {
   line-height: 2;
   letter-spacing: 1px;
 }
-
-.content{
-  display: block;
+.container {
+  position: relative;
+  width: 100%;
   touch-action: manipulation;
   margin: 0 auto;
   -webkit-user-drag: none;
@@ -24,6 +24,34 @@ p, li {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  opacity: 0;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
 }
 
 .block {

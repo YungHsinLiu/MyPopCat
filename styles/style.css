@@ -18,7 +18,7 @@ p, li {
   position: relative;
   width: 100%;
   touch-action: manipulation;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -86,18 +86,8 @@ p, li {
   text-align: center; */
 }
 
-html {
-  /* background-color: #00539F; */
-}
-
-body {
-  /* width: 800;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: none;
-  outline: none; */
-}
+html, body 
+{margin: 0; height: 100%; overflow: hidden}
 
 h1 {
   margin: 0;

@@ -32,7 +32,7 @@ p, li {
 	flex-grow: 1;
 	width: 100%;
 	max-width: 800px;
-	background-position: bottom;
+	/* background-position: bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
 	touch-action: manipulation;
@@ -42,7 +42,7 @@ p, li {
 	-webkit-text-stroke-color: #000;
 	font-weight: 900;
 	font-size: 80px;
-	word-wrap: break-word
+	word-wrap: break-word */
 }
 @media(min-width:1000px) {
 	.container img {
@@ -57,6 +57,7 @@ p, li {
   top: 50%;
   left: 50%;
   width: 100%;
+  max-width: 800px;
   height: 100%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

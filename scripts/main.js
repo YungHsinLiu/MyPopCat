@@ -2,7 +2,7 @@ var isPopping = false;
 var timeoutId;
 var popCount = 0;
 
-var Count = document.querySelector('h1');
+var Count = document.querySelector('h2');
   
 function changeSrc()
 {

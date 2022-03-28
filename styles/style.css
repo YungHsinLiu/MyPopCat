@@ -5,8 +5,16 @@ html {
 
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
+  margin: auto;
+  color: #030303;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  color: #87CEFA	;
 }
 
 p, li {
@@ -32,17 +40,6 @@ p, li {
 	flex-grow: 1;
 	width: 100%;
 	max-width: 800px;
-	/* background-position: bottom;
-	background-size: contain;
-	background-repeat: no-repeat;
-	touch-action: manipulation;
-	text-align: center;
-	color: #fff;
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #000;
-	font-weight: 900;
-	font-size: 80px;
-	word-wrap: break-word */
 }
 @media(min-width:1000px) {
 	.container img {
@@ -89,13 +86,6 @@ p, li {
 
 html, body 
 {margin: 0; height: 100%; overflow: hidden}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
-}
 
 img {
   display: block;

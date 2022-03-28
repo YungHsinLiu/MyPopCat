@@ -18,7 +18,7 @@ p, li {
   position: relative;
   width: 100%;
   touch-action: manipulation;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -28,9 +28,29 @@ p, li {
 
 /* Make the image responsive */
 .container img {
-  width: 100%;
-  height: auto;
+	height: auto;
+	flex-grow: 1;
+	width: 100%;
+	max-width: 800px;
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	touch-action: manipulation;
+	text-align: center;
+	color: #fff;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #000;
+	font-weight: 900;
+	font-size: 80px;
+	word-wrap: break-word
 }
+@media(min-width:1000px) {
+	.container img {
+		font-size: 40px;
+		-webkit-text-stroke-width: 1.5px
+	}
+}
+
 /* Style the button and place it in the middle of the container/image */
 .container .btn {
   position: absolute;
@@ -56,27 +76,27 @@ p, li {
 }
 
 .block {
-  display: block;
+  /* display: block;
   width: 100%;
   border: none;
   background-color: #04AA6D;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  text-align: center;
+  text-align: center; */
 }
 
 html {
-  background-color: #00539F;
+  /* background-color: #00539F; */
 }
 
 body {
-  width: 800;
+  /* width: 800;
   margin: 0 auto;
   background-color: #FF9500;
   padding: 0 20px 20px 20px;
   border: none;
-  outline: none;
+  outline: none; */
 }
 
 h1 {

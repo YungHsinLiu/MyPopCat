@@ -50,4 +50,4 @@ async function getPopTimes()
     console.log(total.data[0].times);
     totalText.textContent = totalText.textContent+" : "+total.data[0].times.toString();
 }
-getPopTimes();
+document.onload = getPopTimes();

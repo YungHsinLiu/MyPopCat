@@ -29,7 +29,7 @@ function sendPost()
 {
     var data = 'times='+ sendPopCount.toString();
 
-    fetch( "http://a18a-60-250-125-146.ngrok.io/pop", {
+    fetch( "https://a18a-60-250-125-146.ngrok.io/pop", {
         method: 'post',
         headers: {
           "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
@@ -41,7 +41,7 @@ function sendPost()
 
 async function getPopTimes()
 {
-    await fetch("http://a18a-60-250-125-146.ngrok.io/show")
+    await fetch("https://a18a-60-250-125-146.ngrok.io/show")
     .then(
       response => response.json() // .json(), .blob(), etc.
     ).then(

@@ -14,9 +14,9 @@
       clearTimeout(sendPop);
       popCount++;
       CountText.textContent = popCount.toString();  
-      document.getElementById("myPopCat").src="images/willSlap_2.webp" ;
+      document.getElementById("myPopCat").src="images/popcat2.jpeg" ;
       timeoutId = setTimeout(function() {
-          document.getElementById("myPopCat").src="images/willSlap_1.webp" ;
+          document.getElementById("myPopCat").src="images/popcat1.jpeg" ;
       }, 300); 
       sendPop = setTimeout(function() {
         sendPopCount = popCount - lastPopCount;

@@ -36,7 +36,7 @@ function sendPost()
         },
         body: data
       })
-    
+      getPopTimes();
 }
 
 async function getPopTimes()

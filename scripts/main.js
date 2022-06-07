@@ -22,7 +22,7 @@
         sendPopCount = popCount - lastPopCount;
         lastPopCount = popCount;
         sendPost();
-      }, 2000);
+      }, 1000);
   }
 
 function sendPost()

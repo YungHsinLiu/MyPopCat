@@ -17,25 +17,25 @@
       document.getElementById("myPopCat").src="images/popcat2.jpeg" ;
       timeoutId = setTimeout(function() {
           document.getElementById("myPopCat").src="images/popcat1.jpeg" ;
-      }, 300); 
+      }, 100); 
       sendPop = setTimeout(function() {
         sendPopCount = popCount - lastPopCount;
         lastPopCount = popCount;
         sendPost();
-      }, 1000);
+      }, 2000);
   }
 
-function sendPost()
+async function sendPost()
 {
     var data = 'times='+ sendPopCount.toString();
 
-    fetch( "https://3973-2001-b011-30d0-1b52-4d5-5edd-3aa9-c9bf.ngrok.io/pop", {
+    await fetch( "https://3973-2001-b011-30d0-1b52-4d5-5edd-3aa9-c9bf.ngrok.io/pop", {
         method: 'post',
         headers: {
           "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
         },
         body: data
-      })
+      });
       getPopTimes();
 }
 
@@ -48,6 +48,6 @@ async function getPopTimes()
       json => total = json// Handle here
     );
     console.log(total.data[0].times);
-    totalText.textContent = totalText.textContent+" : "+total.data[0].times.toString();
+    totalText.textContent = "PopCat💫 : "+total.data[0].times.toString();
 }
 document.onload = getPopTimes();

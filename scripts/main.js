@@ -29,7 +29,7 @@ function sendPost()
 {
     var data = 'times='+ sendPopCount.toString();
 
-    fetch( "https://5999-2001-b011-30d0-1b52-8caf-a805-706e-c797.ngrok.io/pop", {
+    fetch( "https://3973-2001-b011-30d0-1b52-4d5-5edd-3aa9-c9bf.ngrok.io/pop", {
         method: 'post',
         headers: {
           "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
@@ -41,7 +41,7 @@ function sendPost()
 
 async function getPopTimes()
 {
-    await fetch("https://5999-2001-b011-30d0-1b52-8caf-a805-706e-c797.ngrok.io/show")
+    await fetch("https://3973-2001-b011-30d0-1b52-4d5-5edd-3aa9-c9bf.ngrok.io/show")
     .then(
       response => response.json() // .json(), .blob(), etc.
     ).then(
